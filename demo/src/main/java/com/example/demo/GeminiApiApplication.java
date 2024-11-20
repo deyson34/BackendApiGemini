@@ -9,13 +9,12 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class GeminiApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GeminiApiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GeminiApiApplication.class, args);
+    }
 
-	@Bean
+    @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder) {
         return builder.build();
     }
-
 }
